@@ -108,6 +108,5 @@ def main():
             break
 
 if __name__=="__main__":
- #   dest_name=sys.argv[1]
     main()
 
