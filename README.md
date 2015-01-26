@@ -1,6 +1,6 @@
 # amtrace-route
 
-Traceroute implemented with python. Sends 3 UDP probes for each value of ttl, an records round trip times. Has support for -m,-w,-p, -n, and -f options, which must be listed before the hostname.
+Traceroute implemented with python. Sends 3 UDP probes for each value of ttl, and records round trip times. Has support for -m,-w,-p, -n, and -f options, which must be listed before the hostname.
 
 -m max number of hops
 
