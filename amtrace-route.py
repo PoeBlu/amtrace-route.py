@@ -91,18 +91,13 @@ def main():
             print " %s"% cur_host,
         else:
             print " %s"% cur_addr,
-        if times[0]<upper:
-            print "  %f ms" % times[0],
-        else:
-            print " * ",
-        if times[1]<upper:
-            print "  %f ms" % times[1],
-        else:
-            print " * ",
-        if times[2]<upper:
-            print "  %f ms" % times[2]
-        else:
-            print " * "
+
+        for x in range(3):
+            if times[x]<upper:
+                print "  %f ms" % times[x],
+            else:
+                print " * ",
+        print ""
         ttl+=1
         if cur_addr==dest_addr or ttl >max_hops:
             break
